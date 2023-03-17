@@ -135,6 +135,9 @@ void flipSwitch();
 void setStartTime(int amPm, int hr);
 void setStopTime(int amPm, int hr);
 void setWeb();
+void writeFile(fs::FS &fs, const char * path, const char * message);
+String readFile(fs::FS &fs, const char * path) ;
+
 //void syncTime();
 
   BLYNK_WRITE(V0)  // button attached to Virtual Pin 1 in SWITCH mode
